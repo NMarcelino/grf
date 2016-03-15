@@ -1,0 +1,25 @@
+<html>
+<head>
+<title>Say hi to the world</title>
+</head>
+<body>
+  <h3>HELLO WORLD</h3>
+  <script type="text/jsx">
+  var helloMessage = React.createClass({
+    render: function () {
+      return <h1> Hello {this.props.message}!</h1>;
+    }
+  });
+
+  React.render(<helloMessage message = "Noel" /> document.body);
+
+  </script>
+<!--<br />
+<form action="http://127.0.0.1:8081/file_upload" method="POST"
+      enctype="multipart/form-data">
+<!-- <input type="file" name="file" size="50" /> -->
+<!--<br />
+<!--<input type="submit" value="Upload File" /> -->
+<!--</form> -->
+</body>
+</html>

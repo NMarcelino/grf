@@ -2,6 +2,10 @@ var express = require('express');
 var app = express();
 var fs = require("fs");
 
+var React = require('react');
+var ReactDOM = require('react-dom');
+
+
 var bodyParser = require('body-parser');
 var multer  = require('multer');
 
@@ -10,11 +14,13 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 
 
-app.get('/index.htm', function (req, res) {
-   res.sendFile( __dirname + "/" + "index.htm" );
+
+app.get('/hello.htm', function (req, res) {
+   res.sendFile( __dirname + "/" + "hello.htm" );
 })
 
-app.post('/file_upload', function (req, res) {
+
+/* app.post('/file_upload', function (req, res) {
 
    console.log(req.files.file.name);
    console.log(req.files.file.path);
@@ -35,7 +41,7 @@ app.post('/file_upload', function (req, res) {
           res.end( JSON.stringify( response ) );
        });
    });
-})
+}) */
 
 var server = app.listen(8081, function () {
 
