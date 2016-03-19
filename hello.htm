@@ -1,25 +1,19 @@
 <html>
 <head>
 <title>Say hi to the world</title>
+<meta charset="UTF-8" />
+    <title>Hello React!</title>
+    <script src="https://fb.me/react-0.14.7.min.js"></script>
+    <script src="https://fb.me/react-dom-0.14.7.min.sjs"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
 </head>
 <body>
-  <h3>HELLO WORLD</h3>
-  <script type="text/jsx">
-  var helloMessage = React.createClass({
-    render: function () {
-      return <h1> Hello {this.props.message}!</h1>;
-    }
-  });
-
-  React.render(<helloMessage message = "Noel" /> document.body);
-
-  </script>
-<!--<br />
-<form action="http://127.0.0.1:8081/file_upload" method="POST"
-      enctype="multipart/form-data">
-<!-- <input type="file" name="file" size="50" /> -->
-<!--<br />
-<!--<input type="submit" value="Upload File" /> -->
-<!--</form> -->
-</body>
+  <div id="example"></div>
+   <script type="text/babel">
+     ReactDOM.render(
+       <h1>Hello !</h1>,
+       document.getElementById('example')
+     );
+     </script>
+     </body>
 </html>
